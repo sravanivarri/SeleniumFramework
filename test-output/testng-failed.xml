@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <parameter name="Browser" value="chrome"/>
+  <test name="BankingAppTest">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.testCases.TC08_Reorder"/>
+    </classes>
+  </test> <!-- BankingAppTest -->
+  <test name="BankingAppTest(failed)" parallel="none">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.testCases.TC08_Reorder">
+        <methods>
+          <include name="reorder"/>
+          <include name="reportInitiation"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.testCases.TC08_Reorder -->
+    </classes>
+  </test> <!-- BankingAppTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

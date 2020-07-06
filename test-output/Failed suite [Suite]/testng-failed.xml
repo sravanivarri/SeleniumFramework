@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <parameter name="Browser" value="chrome"/>
+  <test name="BankingAppTest">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.testCases.TC01_MobileProductsSortbyName"/>
+      <class name="com.testCases.TC02_CompareMobilePrice"/>
+    </classes>
+  </test> <!-- BankingAppTest -->
+  <test name="BankingAppTest(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.testCases.TC01_MobileProductsSortbyName">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="reportInitiation"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testCases.TC01_MobileProductsSortbyName -->
+      <class name="com.testCases.TC02_CompareMobilePrice">
+        <methods>
+          <include name="compareMobilePrice"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testCases.TC02_CompareMobilePrice -->
+    </classes>
+  </test> <!-- BankingAppTest(failed) -->
+  <test name="BankingAppTest(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.testCases.TC02_CompareMobilePrice">
+        <methods>
+          <include name="compareMobilePrice"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testCases.TC02_CompareMobilePrice -->
+      <class name="com.testCases.TC01_MobileProductsSortbyName">
+        <methods>
+          <include name="SortbyName"/>
+          <include name="reportInitiation"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testCases.TC01_MobileProductsSortbyName -->
+    </classes>
+  </test> <!-- BankingAppTest(failed) -->
+  <test name="BankingAppTest(failed)(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.testCases.TC02_CompareMobilePrice">
+        <methods>
+          <include name="compareMobilePrice"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testCases.TC02_CompareMobilePrice -->
+      <class name="com.testCases.TC01_MobileProductsSortbyName">
+        <methods>
+          <include name="reportInitiation"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testCases.TC01_MobileProductsSortbyName -->
+    </classes>
+  </test> <!-- BankingAppTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

@@ -1,0 +1,144 @@
+#--For Chrome driver--!
+
+chrome_driver_path=./Drivers\\chromedriver.exe
+chrome_driver_value=webdriver.chrome.driver
+
+#--For IE driver--!
+ie_driver_path=./Drivers\\IEDriverServer.exe
+ie_driver_value=webdriver.ie.driver
+
+url=http://live.guru99.com/
+excelPath=
+homePageTitle=Home page
+
+#--Login Page---!
+
+#---for login1--url=http://live.demoguru99.com/index.php/customer/account/login/---!
+username=sravanivarri@gmail.com
+password=Sravzcute@61
+
+#--for login2---!
+login_url=http://demo.guru99.com/V4/
+username_xpath=//input[@name="uid"]
+password_xpath=//input[@id='password']"]
+login_xpath=//input[@name="btnLogin"]
+logout_xpath=/html/body/div[3]/div/ul/li[15]/a[1]
+
+#---Web Elements on Home Page---!
+mobile_element_xpath=//div[@id='header-nav']/nav[1]/ol[1]/li[1]/a[1]
+
+#--Mobile Page--!
+mobile_page_title=Mobile
+sortby_element_xpath=//select[@title='Sort By']
+visible_element_on_sorting=Name
+
+sony_xperia_price_xpath=//span[@id='product-price-1']/span[1]
+sony_xperia_link_id=product-collection-image-1
+xperia_addToCart_xpath=(//button[@type='button'])[3]
+
+#------Shopping Cart Page Locators-----!
+
+qty_xpath=//table[@id='shopping-cart-table']/tbody[1]/tr[1]/td[4]/input[1]
+qty=1000
+update_xpath=//table[@id='shopping-cart-table']/tbody[1]/tr[1]/td[4]/button[1]
+errorMsg_xpath=//table[@id='shopping-cart-table']/tbody[1]/tr[1]/td[2]/p[1]
+expctedErrorMsg=* The maximum quantity allowed for purchase is 500.
+
+emptyCartBttn_id=empty_cart_button
+emptyCartMsg=//div[@class='page']/div[2]/div[1]/div[1]/div[2]/p[1]
+expctedemptyCartMsg=You have no items in your shopping cart.
+
+sony_xperia_price_detailsscreen_xpath=//div[@class='product-shop']/div[2]/div[1]/span[1]
+Iphone_AddToCompare_xpath=(//a[contains(text(),'Add to Compare')])[1]
+Xperia_AddToCompare_xpath=(//a[contains(text(),'Add to Compare')])[3]
+
+Iphone_Title_xpath=//h2/a[@title='IPhone']
+Xperia_Title_xpath=//h2/a[@title='Sony Xperia']
+
+Compare_xpath=//button[@title='Compare']
+
+pop_up_xpected_heading=Compare Products
+pop_up_actual_heading_xpath=//html[@id='top']/body/div[1]/div[1]/h1
+
+close_popup_window_xpath=//button[@title='Close Window']
+
+#--registration---!
+
+Account_xpath =//span[@class='label'][contains(text(),'Account')]
+Myaccount_Xpath =//div[@id='header-account']//a[contains(text(),'My Account')]
+Createaccount_xpath=//span[text()='Create an Account']
+FirstName_xpath=//input[@id='firstname']
+Lastname_xpath=//input[@id='lastname']
+regpassword_xpath=//input[@id='password']
+confirmpwd_xpath=//input[@id='confirmation']
+register_xpath=//span[text()='Register']
+emailid_xpath=//input[@id='email_address']
+Registartion_successmsg=Thank you for registering with Main Website Store.
+Registartion_successmsg_xpath=//span[contains(text(),'Thank you for registering with Main Website Store.')]
+tv_xpath=//a[contains(text(),'TV')]
+add_to_wishlist_item1=//li[1]//div[1]//div[3]//ul[1]//li[1]//a[1]
+share_wishlist_xpath=//span[contains(text(),'Share Wishlist')]
+email_xpath=//textarea[@id='email_address']
+FinalShare_xpath=//span[contains(text(),'Share Wishlist')]
+expected_shared_msg=Your Wishlist has been shared.
+
+
+#---shipping cost added and order is placed
+
+EmailAddress_xpath=//input[@id='email']
+mainpassword_xpath=//input[@id='pass']
+mainlogin_xpath=//span[contains(text(),'Login')]
+mywishlist_xpath=//div[@class='block-content']//a[contains(text(),'My Wishlist')]
+addtocart_xpath=//span[contains(text(),'Add to Cart')]
+country_select_element_xpath=//select[@id='country']
+country_visible_element=United States
+state_select_element_xpath=//select[@id='region_id']
+state_visible_element=New York
+pincode_xpath=//input[@id='postcode']
+estimate_xpath=//span[contains(text(),'Estimate')]
+Flatrate_price_xpath=//label[contains(text(),'Fixed')]
+update_total_xpath=//span[contains(text(),'Update Total')]
+flatrate_radiobutton_xpath=//input[@id='s_method_flatrate_flatrate']
+subtotal_xpath=//span[@class='cart-price']//span[@class='price'][contains(text(),'$1,230.00')]
+checkout_xpath=//li[@class='method-checkout-cart-methods-onepage-bottom']//button[@class='button btn-proceed-checkout btn-checkout']//span//span[contains(text(),'Proceed to Checkout')]
+addressSelect_xpath=//select[@id='billing-address-select']
+Address_visible_element=New Address
+address_xpath=//input[@id='billing:street1']
+city_xpath=//input[@id='billing:city']
+billing_postcode_xpath=//input[@id='billing:postcode']
+telephone_xpath=//input[@id='billing:telephone']
+billing_continue_xpath=//div[@id='billing-buttons-container']//button[@class='button']//span//span[contains(text(),'Continue')]
+shippingmethod_continue_xpath=//div[@id='shipping-method-buttons-container']//button[@class='button']//span//span[contains(text(),'Continue')]
+moneyorder_xpath=//input[@id='p_method_checkmo']
+paymentinfo_continue_xpath=//div[@id='payment-buttons-container']//button[@class='button']//span//span[contains(text(),'Continue')]
+placeorder_xpath=//span[contains(text(),'Place Order')]
+ordergenerated_xpath=//h2[@class='sub-title']
+orderno_xpath=//*[@id="top"]/body/div/div/div[2]/div/div/p[1]/a
+
+
+#----print the order as pdf--!
+myorders_xpath=//a[contains(text(),'My Orders')]
+recentorderno_path=/html/body/div/div/div[2]/div/div[2]/div/table/tbody/tr[1]/td[1]
+status_xpath=//*[@id="my-orders-table"]/tbody/tr[1]/td[5]/em
+vieworder_xpath=//tr[@class='first odd']//a[contains(text(),'View Order')]
+descriptionorderno_xpath=//*[@id="top"]/body/div/div/div[2]/div/div[2]/div/div[1]/h1
+printorder_xpath=//a[@class='link-print']
+
+
+#--reorder---!
+reorder_xpath=//tr[@class='first odd']//a[@class='link-reorder'][contains(text(),'Reorder')]
+update_reorder_xpath=//td[@class='product-cart-actions']//button[@name='update_cart_action']//span//span[contains(text(),'Update')]
+qty_xpath=//input[@name='cart[132810]
+before_grandtotal=//*[@id="shopping-cart-totals-table"]/tfoot/tr/td[2]/strong/span
+billing_continue=//div[@id='billing-buttons-container']//button[@class='button']//span//span[contains(text(),'Continue')]
+
+
+
+
+
+
+
+
+
+
+

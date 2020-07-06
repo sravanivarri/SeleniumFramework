@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="25734" started-at="2020-06-13T11:57:19Z" finished-at="2020-06-13T11:57:44Z">
+    <groups>
+    </groups>
+    <test name="BankingAppTest" duration-ms="25734" started-at="2020-06-13T11:57:19Z" finished-at="2020-06-13T11:57:44Z">
+      <class name="com.testCases.TC01_MobileProductsSortbyName">
+        <test-method status="PASS" signature="reportInitiation()[pri:0, instance:com.testCases.TC01_MobileProductsSortbyName@3796751b]" name="reportInitiation" is-config="true" duration-ms="132" started-at="2020-06-13T17:27:19Z" finished-at="2020-06-13T17:27:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportInitiation -->
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:com.testCases.TC01_MobileProductsSortbyName@3796751b]" name="Setup" is-config="true" duration-ms="4977" started-at="2020-06-13T17:27:19Z" finished-at="2020-06-13T17:27:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="SortbyName()[pri:0, instance:com.testCases.TC01_MobileProductsSortbyName@3796751b]" name="SortbyName" duration-ms="19775" started-at="2020-06-13T17:27:24Z" description="validate the sorting of the mobiles by name " finished-at="2020-06-13T17:27:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortbyName -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testCases.TC01_MobileProductsSortbyName@3796751b]" name="tearDown" is-config="true" duration-ms="142" started-at="2020-06-13T17:27:43Z" finished-at="2020-06-13T17:27:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SortbyName status=SUCCESS method=TC01_MobileProductsSortbyName.SortbyName()[pri:0, instance:com.testCases.TC01_MobileProductsSortbyName@3796751b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testCases.TC01_MobileProductsSortbyName@3796751b]" name="closeBrowser" is-config="true" duration-ms="831" started-at="2020-06-13T17:27:44Z" finished-at="2020-06-13T17:27:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeReport()[pri:0, instance:com.testCases.TC01_MobileProductsSortbyName@3796751b]" name="closeReport" is-config="true" duration-ms="212" started-at="2020-06-13T17:27:44Z" finished-at="2020-06-13T17:27:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeReport -->
+      </class> <!-- com.testCases.TC01_MobileProductsSortbyName -->
+    </test> <!-- BankingAppTest -->
+  </suite> <!-- Suite -->
+</testng-results>
